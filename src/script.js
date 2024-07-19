@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
 function startGuessing() {
     let low = 1; // Límite inferior del rango
     let high = 100; // Límite superior del rango
+
+    // Limpiar los elementos de resultado y pregunta antes de comenzar un nuevo juego
+    document.getElementById('question').innerHTML = ''; 
+    document.getElementById('result').innerHTML = '';  
+
     // Llama a la función para hacer la primera adivinanza
     guessNumber(low, high);
 }
